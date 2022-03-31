@@ -1,0 +1,33 @@
+html {
+
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-size: cover;
+  /*background-color: #FF9500;*/
+  padding: 0 20px 20px 20px;
+  /*border: 5px solid red;*/
+}
+div {
+  width: 300px;
+  /*height: 500px;*/
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 0 20px 20px 20px;
+  /*border: 5px solid white;*/
+}
+p{
+	color: red;
+	font-size: 30xp
+}.dss{color: blue; font-size: 15xp}
+.timu1{color: blue}
+.timu2{color: red}
+#jshao{color:red;}
+.kuang{
+	background-color: #00539F
+	border: 8px solid black;
+}
+button{color:red; width: 100px;height: 20px;}
+h1{color:blue;}
+a{color: blue;}

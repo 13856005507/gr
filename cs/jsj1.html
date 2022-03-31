@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光@计算机基础测试1</title>
+	<link rel="stylesheet" type="text/css" href="../css/gu.css">
+	<link rel="shortcut icon" href="../img/ico.png">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	function inti(){
+		var t1=denl.mima1.value;
+var t2=denl.mima2.value;
+var t3=denl.mima3.value;
+		var t4=denl.mima4.value;
+var t5=denl.mima5.value;
+		var v3=denl.username.value;
+		var n=denl.name.value;
+		if(v3==""){alert('请填写账号'); return;}
+		var re = /^1\d{10}$/;
+ 		if (!re.test(v3)) {
+  			alert("账号不正确");
+  			return;
+ 		}
+ 		if(n==""){alert('请填写姓名');return;}
+ 		var sum=100;
+ 		if(t1==""){alert('请填写试题1');return;}
+	if(t2==""){alert('请填写试题2');return;}
+	if(t3==""){alert('请填写试题3');return;}
+ 		if(t4==""){alert('请填写试题4');return;}
+ 		if(t5==""){alert('请填写试题5');return;}
+		if(t1!="冯.诺依曼"){alert('试题1不正确');sum-=20;}
+		if(t2!="CPU"){alert('试题2不正确');sum-=20;}
+		if(t3!="人工智能"){alert('试题3不正确');sum-=20;}
+		if(t4!="2进制"&&t4!="二进制"){alert('试题4不正确');sum-=20;}
+		if(t5!="万国码"){alert('试题5不正确');sum-=20;}
+		if(sum>40) alert('欢迎你,'+n+'\n'+'恭喜您得了'+sum+'分。');
+		else alert('对不起,'+n+'您得了'+sum+'分。'+'\n'+'您的信息学基础可能不太好,请您继续学习吧!')
+		window.location.href= "../grindex.html" ;
+	}
+	</script>
+</head>
+<body>
+
+	<div id="documen">
+		<nav>
+			<h1>计算机基础测试1</h1>
+		</nav>
+		<main><center>
+		<p>欢迎来到银河之光，我是站长小张，只要通过我的测试，就可以了解计算机及编程的各种知识。<br>银河之光是一个欢迎信息开发者的网站。</p>
+		<div id="zhude" >
+	<form name="denl">
+		账号(手机号):<input type="text" id="username"><br>
+		试题1(计算机之父的姓名(·用.代替,一共四个汉字)):<input type="text" id="mima1"><br>
+		试题2(中央处理器的英文缩写(全大写)):<input type="text" id="mima2"><br>
+		试题3(图灵测试跟什么计算机项目有关，4个字):<input type="text" id="mima3"><br>
+		试题4(计算机使用什么进制):<input type="text" id="mima4"><br>
+		试题5(UTF-8又称什么,3个字):<input type="text" id="mima5"><br>
+		姓名:<input type="text" id="name"><br>
+        <input name = "Submit" type = "button"   value = "提交" onclick = inti()>		
+	</form><a href="../grindex.html">返回</a></div></center>
+	</main>
+	<footer>
+	<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+	</footer>	</div>
+</body>
+</html>

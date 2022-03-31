@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+		<title>临时笔记库</title>
+        <meta charset = "utf-8" />
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(117, 113, 113);
+                color: white;
+            }
+            #main{
+                flex: 1;
+                width: 60%;
+            }
+            #typing{
+                flex: 1;
+                width: 60%;
+                height: 20vh;
+                border: red;
+                font-size:xx-large;
+            }
+            #commend{
+                flex: 1;
+                width: 80%;
+            }
+            #btn{
+                background-color: red;
+            }
+            p{
+            	color: black;
+                background-color:white;
+            }.dss{color:red; background-color: black;}
+            a{color: blue;}
+        </style>
+
+    </head>
+
+    <body background="img/beijing.png">
+        <div id="main">
+        	<center><a href="index.html">返回主页面</a>
+            <h1>笔记区</h1><hr>
+            <p class="dss">笔记不会保存,请自行复制！</p>
+            <h3>输入框:</h3>
+            <textarea id="typing"></textarea>
+            <button id="btn">发送笔记</button>
+            <div id="commend"></div></center>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById("btn").onclick=function(){send()};
+        function send(){
+            var g=new Date();
+            var value= document.getElementById("typing").value;
+            var p= document.createElement("p");
+            p.innerHTML="笔记："+value+'<hr>'+g.toUTCString();
+            document.getElementById("commend").prepend(p);
+        }
+    </script>
+</html>

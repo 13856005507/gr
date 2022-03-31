@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/gu.css">
+	<link rel="shortcut icon" href="img/ico.png">
+</head>
+<body>
+<script type="text/javascript">
+</script>
+	<div class="rTop" id="rTop" onClick="toTop()">
+		<style type="text/css">
+	.img-wrapper { width: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.img-wrapper img {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid #000;
+}
+.grayscale-img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.grayscale-img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/* ==============
+* 深褐色过滤
+* ==============*/
+.sepia-img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.sepia-img:hover {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+</style> 
+<style>
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+background-color: white;
+color: black;
+border-bottom-color:#333; 
+border-right-color:#333; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+    if(document.body.scrollTop||document.documentElement.scrollTop){
+        document.getElementById('rTop').style.display="block"
+    }else{
+    document.getElementById('rTop').style.display="none"
+    button1style.cursor="hand"
+}
+}
+<!--点击“返回顶部”按钮-->
+function toTop(){
+    window.scrollTo('0','0');
+    button1style = document.getElementById('rTop').style;
+    button1style.display="none"
+    //button1style.cursor="hand"
+    document.getElementById('rTop').style.display="none"
+}
+function moreTest(){
+    for(let i =0; i< 50; i++){
+       document.write("sss"+i+"<br>");
+    }
+}
+</script>
+	返回顶部</div>
+	<div id="document">
+		<nav>
+			<p><a href="index.html"><img src="img/logo.png" id="zhu2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="grindex.html"><img src="img/ico.png" id="zhu"></a><!--<h1>个人主页</h1>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>银河之光网站</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="rz.html"><h2>日志</h2></a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</nav>
+		<main>
+			<center><div id="zhud">
+				<img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<h1><ins>小张</ins></h1>
+				<h4>在小学学习信息的学生<br>小张的知识面:c++,html,python</h4>
+				<p><a href="https://www.csdn.net/" class="a">csdn</a>|<a href="https://developer.mozilla.org/zh-CN/" class="a">html学习</a>|<a href="http://oj.codingle.cn/#/ebank" class="a">科丁乐学习</a>|<a href="https://blog.csdn.net/m0_60630094?spm=1000.2115.3001.5343" class="a">小张的csdn博客号</a></p>
+
+			</div></center>
+			<div>
+				<p></p>
+				<p></p>
+				<hr><div>
+				<center><h1>文章&amp;测试&amp;休闲推荐</h1>
+				<div class="img-wrapper">
+<div class="zhuw2" id="tuisx1">
+					<center><a href="wz/shuxue1.html"><img src="img/ico.png" id="zhup"></a>
+					<!--<a href="index.html">科丁乐</a>-->
+					<h1>数学知识库</h1>
+					<p>关于数学各种知识的介绍，包括多个知识点，可以补充一些数学性的知识(知识来源:百度百科)。</p><p>类别：数学<br>创立人：站长<br>建立日期:2022.3.28</p></center>
+				</div></div>
+				<div class="img-wrapper"><div class="zhuw2" id="tuics1">
+				<center><a href="cs/jsj1.html"><img src="img/ico.png" id="zhup"></a>
+				<!--<a href="index.html">科丁乐</a>-->
+				<h1>计算机基础测试1</h1>
+				<p>这是一个基于表单的测试，本测试跟计算机基础相关，如果不会可以查资料。</p><p>类别：测试<br>创立人：站长</p></center>
+				</div></div></center></div>
+			<center>
+				<p></p>
+				<p></p>
+				<hr>
+				<h1>分类栏目</h1></center>
+<section class="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+				<span class="filter-item active" data-filter="all">所有 8</span>
+				<span class="filter-item" data-filter="3D">介绍 1</span>
+				<span class="filter-item" data-filter="tool">工具 2</span>
+				<span class="filter-item" data-filter="game">游戏 2</span>
+				<span class="filter-item" data-filter="sx">数学 1</span>
+				<span class="filter-item" data-filter="xx">html 1</span>
+				<span class="filter-item" data-filter="cs">测试 1</span>
+			</div>
+		</div>
+		<div class="row">
+			<div  class="gallery-item 3D">
+				<div class="zhuw">
+					<center><img src="img/ico.png" id="zhu">
+					<!--<a href="index.html">科丁乐</a>-->
+					<a href="wz/ZZ_1.html"><h1>网站介绍</h1></a>
+					<p>关于网站及站长的介绍</p><p>类别：介绍<br>创立人：站长<br>建立日期:2022.3.27</p></center>
+				</div></div>
+				<div  class="gallery-item sx"><div class="zhuw">
+					<center><img src="img/ico.png" id="zhu">
+					<!--<a href="index.html">科丁乐</a>-->
+					<a href="wz/shuxue1.html"><h1>数学知识库</h1></a>
+					<p>关于数学各种知识的介绍，包括多个知识点。</p><p>类别：数学<br>创立人：站长<br>建立日期:2022.3.28</p></center>
+				</div></div>
+			
+				<div  class="gallery-item xx"><div class="zhuw">
+					<center><img src="img/ico.png" id="zhu">
+					<!--<a href="index.html">科丁乐</a>-->
+					<a href="wz/htmlBJ1.html"><h1>html笔记1</h1></a>
+					<p>关于网站各种知识的介绍，包括多个知识点，是html的第一节笔记，后续将更新2,3等等笔记。</p><p>类别：html<br>创立人：站长<br>建立日期:2022.3.30</p></center>
+				</div></div>
+
+			<div class="gallery-item game">
+				<div class="zhuw">
+					<center><img src="img/ico.png" id="zhu">
+					<a href="game/cwcg.html"><h1>趣味闯关</h1></a>
+					<p>一个趣味闯关小游戏，有好几个场景。</p><p>类别：游戏<br>创立人：站长<br>建立日期:2022.3.28</p></center>
+				</div>
+			</div>
+			<div class="gallery-item game">
+				<div class="zhuw">
+				<center><img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<a href="game/2048.html"><h1>2048小游戏</h1></a>
+				<p>一个2048小游戏，还原2048场景。</p><p>类别：游戏<br>创立人：站长<br>建立日期:2022.3.28</p></center>
+				</div>
+		</div>				
+			<div class="gallery-item tool">
+				<div class="zhuw">
+				<center><img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<a href="tools/jsq.html"><h1>四则计算器</h1></a>
+				<p>一个四则计算器，有点简陋，不过能用。</p><p>类别：工具<br>创立人：站长</p></center></div></div>
+			<div class="gallery-item tool">
+				<div class="zhuw">
+				<center><img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<a href="tools/rl.html"><h1>超级日历</h1></a>
+				<p>一个日历，有点简陋，不过好用就成。</p><p>类别：工具<br>创立人：站长</p></center>
+				</div>
+		</div>
+			<div class="gallery-item tool">
+				<div class="zhuw">
+				<center><img src="img/baidu.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<a href="tools/rl.html"><h1>超级日历</h1></a>
+				<p>一个日历，有点简陋，不过好用就成。</p><p>类别：工具<br>创立人：站长</p></center>
+				</div>
+		</div>			
+			<div class="gallery-item cs">
+				<div class="zhuw">
+				<center><img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<a href="cs/jsj1.html"><h1>计算机基础测试1</h1></a>
+				<p>这是一个基于表单的测试，本测试跟计算机基础相关，如果不会可以查资料。</p><p>类别：测试<br>创立人：站长</p></center>
+				</div>
+		</div>				
+		</section>
+	<!-- 			<div class="zhuw"  class="gallery-item tool">
+				<center><img src="img/ico.png" id="zhu">
+				<a href="index.html">科丁乐</a>
+				<a href="wz/ZZ_1.html"><h1>网站介绍</h1></a>
+				<p>关于网站及站长的介绍</p><p>类别：介绍<br>创立人：站长</p></center>
+				</div>
+				<div class="zhuw"  class="gallery-item tool">
+				<center><img src="img/ico.png" id="zhu">
+				<a href="index.html">科丁乐</a>
+				<a href="wz/shuxue1.html"><h1>数学知识库</h1></a>
+				<p>关于数学各种知识的介绍，包括多个知识点。</p><p>类别：数学<br>创立人：站长</p></center>
+				</div>
+				<div class="zhuw"  class="gallery-item tool">
+				<center><img src="img/ico.png" id="zhu">
+				<<a href="index.html">科丁乐</a>
+				<a href="game/2048.html"  class="gallery-item tool"><h1>2048小游戏</h1></a>
+				<p>一个2048小游戏，还原2048场景。</p><p>类别：游戏<br>创立人：站长</p></center>
+				</div>
+				<div class="zhuw"  class="gallery-item tool">
+				<center><img src="img/ico.png" id="zhu">
+				<a href="game/cwcg.html"><h1>趣味闯关</h1></a>
+				<p>一个趣味闯关小游戏，有好几个场景。</p><p>类别：游戏<br>创立人：站长</p></center>
+				</div>	 -->			
+		</main>
+		<footer>
+<div class="zhuz">
+<style>
+#clock{undefined
+       width:800px;
+       font-size:80px; 
+       font-weight:bold;
+       color:red;
+       text-align:center;
+       margin:20px;
+       }
+.box1{undefined
+     margin-right:10px;
+     width:100px; 
+     height:100px; 
+     float:left;
+     line-height:100px;
+        border:#C30 1px solid;
+     }   
+.box2{undefined
+    width:30px; 
+    float:left;
+    margin-right:10px;
+    }
+#h1{ text-align:center;}            
+</style>		
+ <div id="clock">
+ <div class="box1" id="h"></div>
+ <div class="box2" id="">:</div>
+ <div class="box1" id="m"></div>
+ <div class="box2" id="">:</div>
+ <div class="box1" id="s"></div>
+ </div>
+ <!-- 设置时分秒与div-->
+ <script language="javascript">
+ //获取显示区域框对象 时分秒
+ var hours=document.getElementById("h");
+ var minute=document.getElementById("m");
+ var second=document.getElementById("s");
+ 
+ //获取当前时间
+ function getCurrentTime(){undefined
+     //定义
+  var date=new Date();
+  //时
+  var h=date.getHours();
+  //分
+  var m=date.getMinutes();
+  //秒
+  var s=date.getSeconds();
+  //使每个div里都有两个数字，
+  if(h<10) h="0"+h;
+     if(m<10) m="0"+m;
+     if(s<10) s="0"+s;
+     //将修改后的数值使用innerHTML属性显示到对应的时间显示框中
+  hours.innerHTML=h;
+  minute.innerHTML=m;
+  second.innerHTML=s;  
+ }
+ setInterval("getCurrentTime()", 1000);
+ //每1000毫秒更新一次，getcurrenttime为调用的函数。
+ </script>
+			</div>
+</div>	</footer>
+		<footer>
+
+		<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+		</footer>	
+
+	</div>
+<script src="./js/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a9430a37066911650e26adadcc42798a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+
+
+ const filterContainer = document.querySelector(".gallery-filter"),
+ galleryItems = document.querySelectorAll(".gallery-item");
+
+ filterContainer.addEventListener("click", (event) =>{
+   if(event.target.classList.contains("filter-item")){
+   	 // deactivate existing active 'filter-item'
+   	 filterContainer.querySelector(".active").classList.remove("active");
+   	 // activate new 'filter-item'
+   	 event.target.classList.add("active");
+   	 const filterValue = event.target.getAttribute("data-filter");
+   	 galleryItems.forEach((item) =>{
+       if(item.classList.contains(filterValue) || filterValue === 'all'){
+       	item.classList.remove("hide");
+       	 item.classList.add("show");
+       }
+       else{
+       	item.classList.remove("show");
+       	item.classList.add("hide");
+       }
+   	 });
+   }
+ });
+</script>
+</section>
+</body>
+</html>

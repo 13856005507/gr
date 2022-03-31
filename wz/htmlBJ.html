@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光@html笔记1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/gu.css">
+	<link rel="shortcut icon" href="img/ico.png">
+</head>
+<body>
+	<div id="document">
+		<nav>
+			<p><a href="..\index.html"><img src="img/logo.png" id="zhu2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\grindex.html"><img src="img/ico.png" id="zhu"></a><!--<h1>个人主页</h1>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\rz.html"><h2>日志</h2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>银河之光网站</h1></p> 
+		</nav>
+		<main>
+			<center><div id="zhud">
+				<img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<h1>小张</h1>
+				<h4>在小学学习信息的学生</h4>
+				<p><a href="https://www.csdn.net/">csdn</a>|<a href="https://developer.mozilla.org/zh-CN/">html学习</a>|<a href="http://oj.codingle.cn/#/ebank">科丁乐学习</a></p>
+
+			</div></center>
+			<center>
+	<div class="rTop" id="rTop" onClick="toTop()">
+<style>
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+background-color: white;
+color: black;
+border-bottom-color:#333; 
+border-right-color:#333; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+    if(document.body.scrollTop||document.documentElement.scrollTop){
+        document.getElementById('rTop').style.display="block"
+    }else{
+    document.getElementById('rTop').style.display="none"
+    button1style.cursor="hand"
+}
+}
+<!--点击“返回顶部”按钮-->
+function toTop(){
+    window.scrollTo('0','0');
+    button1style = document.getElementById('rTop').style;
+    button1style.display="none"
+    //button1style.cursor="hand"
+    document.getElementById('rTop').style.display="none"
+}
+function moreTest(){
+    for(let i =0; i< 50; i++){
+       document.write("sss"+i+"<br>");
+    }
+}
+</script>
+	返回顶部</div>
+		</center>
+		<center><h1>html笔记1</h1><hr>
+		<p>哈喽，大家好。从今天起，我将带大家一起学习html的各种小知识，让我们一起加油吧！本章我们要学习各<br>种基础知识，不过先不学习html语言语法，先补充一些知识做准备。<br>注意：站长难免有讲的不好的地方，我有了微信之后，请大家指点一下！</p>
+		<p>类别分类：<br>
+C/S:客户端/服务器<br>
+B/S:浏览器/服务器<br>
+网站种类：<br>
+1.	静态网站<br>
+访问哪个网页就给出哪个网页，只能浏览，不能交互。<br>
+2.	动态网站<br>
+拥有一个index.php<br>
+模式：浏览器->服务器->php引擎->数据库-> php引擎->服务器->浏览器<br>
+动态网站一般基于数据库的开发，这样可以大大减少维护的工作量。<br>
+
+		</p>
+		</center>
+		</main>
+		<footer>
+		<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+		</footer>
+<!-- 	<xmp>
+		<html>
+	</xmp> -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光@网站介绍</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gu.css">
+	<link rel="shortcut icon" href="../img/ico.png">
+</head>
+<body>
+	<div id="document">
+		<nav>
+			<p><a href="..\index.html"><img src="img/logo.png" id="zhu2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\grindex.html"><img src="img/ico.png" id="zhu"></a><!--<h1>个人主页</h1>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\rz.html"><h2>日志</h2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>银河之光网站</h1></p> 
+		</nav>
+		<main>
+		<div class="rTop" id="rTop" onClick="toTop()">
+<style>
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+background-color: white;
+color: black;
+border-bottom-color:#333; 
+border-right-color:#333; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+    if(document.body.scrollTop||document.documentElement.scrollTop){
+        document.getElementById('rTop').style.display="block"
+    }else{
+    document.getElementById('rTop').style.display="none"
+    button1style.cursor="hand"
+}
+}
+<!--点击“返回顶部”按钮-->
+function toTop(){
+    window.scrollTo('0','0');
+    button1style = document.getElementById('rTop').style;
+    button1style.display="none"
+    //button1style.cursor="hand"
+    document.getElementById('rTop').style.display="none"
+}
+function moreTest(){
+    for(let i =0; i< 50; i++){
+       document.write("sss"+i+"<br>");
+    }
+}
+</script>
+	返回顶部</div>
+			<center><div id="zhud">
+				<img src="img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<h1>小张</h1>
+				<h4>在小学学习信息的学生</h4>
+				<p><a href="https://www.csdn.net/">csdn</a>|<a href="https://developer.mozilla.org/zh-CN/">html学习</a>|<a href="http://oj.codingle.cn/#/ebank">科丁乐学习</a></p>
+
+			</div></center>
+			<center><div>
+				<h1>网站介绍</h1>
+				<hr>
+				<p>你好，这里是银河之光网站，这是一个在学习科丁乐的学生开发的网站。<br>有一个文章库，包含编程知识和数学知识，并且持续更新。<br>有的链接连向别的学习编程的网站。左上角科丁乐图标连向方便科丁乐学习的网站。<br>站长将与你们一起学习各种数学以及编程知识，让我们一起进步吧！</p>
+				<p>站长:一个小学生，会用多种编程语言，平时喜欢捣鼓一些小玩意。</p>
+			</div></center>
+		</main>
+		<footer>
+		<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光@计算器</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../img/ico.png">
+		<link rel="stylesheet" type="text/css" href="../css/gu.css">
+</head>
+<body>
+		<div id="document">
+		<nav>
+			<p><a href="..\index.html"><img src="../img/logo.png" id="zhu2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\grindex.html"><img src="../img/ico.png" id="zhu"></a><!--<h1>个人主页</h1>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="..\rz.html"><h2>日志</h2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>银河之光网站</h1></p> 
+		</nav>
+		<main>
+						<center><div id="zhud">
+				<img src="../img/ico.png" id="zhu">
+				<!--<a href="index.html">科丁乐</a>-->
+				<h1><ins>小张</ins></h1>
+				<h4>在小学学习信息的学生<br>小张的知识面:c++,html,python</h4>
+				<p><a href="https://www.csdn.net/" class="a">csdn</a>|<a href="https://developer.mozilla.org/zh-CN/" class="a">html学习</a>|<a href="http://oj.codingle.cn/#/ebank" class="a">科丁乐学习</a>|<a href="https://blog.csdn.net/m0_60630094?spm=1000.2115.3001.5343" class="a">小张的csdn博客号</a></p>
+
+			</div></center>
+			<center>
+	<div class="rTop" id="rTop" onClick="toTop()">返回顶部
+<style>
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+background-color: white;
+color: black;
+border-bottom-color:#333; 
+border-right-color:#333; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+    if(document.body.scrollTop||document.documentElement.scrollTop){
+        document.getElementById('rTop').style.display="block"
+    }else{
+    document.getElementById('rTop').style.display="none"
+    button1style.cursor="hand"
+}
+}
+<!--点击“返回顶部”按钮-->
+function toTop(){
+    window.scrollTo('0','0');
+    button1style = document.getElementById('rTop').style;
+    button1style.display="none"
+    //button1style.cursor="hand"
+    document.getElementById('rTop').style.display="none"
+}
+function moreTest(){
+    for(let i =0; i< 50; i++){
+       document.write("sss"+i+"<br>");
+    }
+}
+</script></div>
+<div>
+<h1>计算器</h1><hr><p><br></p>
+<div id="zhuj">
+		<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+   <input type="number" id="a" value="0">
+          + <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output></form>
+   <form oninput="x.value=parseInt(a.value) - parseInt(b.value)">             
+   <input type="number" id="a" value="0">
+          - <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output></form><form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+          <input type="number" id="a" value="0"> 
+          * <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output></form>
+<form oninput="x.value=parseInt(a.value) / parseInt(b.value)">
+          <input type="number" id="a" value="0"> 
+          / <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output></form>                
+                </div></div>
+		</main>
+		<footer>
+		<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+		</footer>
+</body>
+</html>	
+</form>

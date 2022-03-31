@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>银河之光@日志</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/gu.css">
+	<link rel="shortcut icon" href="img/ico.png">
+</head>
+<body>
+	<div id="document">
+		<nav>
+
+			<p><a href="index.html"><img src="img/logo.png" id="zhu2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="grindex.html"><img src="img/ico.png" id="zhu"></a><!--<h1>个人主页</h1>-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="rz.html"><h2>日志</h2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>银河之光网站</h1></p>
+		</nav>
+		<main>
+		<div class="rTop" id="rTop" onClick="toTop()">
+<style>
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+background-color: white;
+color: black;
+border-bottom-color:#333; 
+border-right-color:#333; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+    if(document.body.scrollTop||document.documentElement.scrollTop){
+        document.getElementById('rTop').style.display="block"
+    }else{
+    document.getElementById('rTop').style.display="none"
+    button1style.cursor="hand"
+}
+}
+<!--点击“返回顶部”按钮-->
+function toTop(){
+    window.scrollTo('0','0');
+    button1style = document.getElementById('rTop').style;
+    button1style.display="none"
+    //button1style.cursor="hand"
+    document.getElementById('rTop').style.display="none"
+}
+function moreTest(){
+    for(let i =0; i< 50; i++){
+       document.write("sss"+i+"<br>");
+    }
+}
+</script>
+	返回顶部</div>
+			<center>
+			<h2>2022.3.27</h2>
+			<p></p>
+			<hr>
+				<p>1.建立网站<br>
+				2.建立日志<br>
+				3.设置文章栏目
+				<br>4.建立文章</p><p></p></center>
+			<center><h2>2022.3.28</h2>
+			<p></p>
+			<hr>
+				<p>1.修正页面布局<br>
+				2.修正文章栏目布局<br>3.加入底部时钟<br>4.加入游戏栏目</p></center>	
+			<center><h2>2022.3.29</h2>
+			<p></p>
+			<hr>
+				<p>1.加入分类栏目<br>
+				2.加入工具栏目<br>3.加入返回顶部的按钮</p></center>	
+			<center><h2>2022.3.30</h2>
+			<p></p>
+			<hr>
+				<p>1.建立html笔记专栏<br>
+				2.加入代码块</p></center>						
+		</main>
+		<footer>
+		<p><h1>开发者世界</h1>&nbsp;&nbsp;&nbsp;<p class="dss">开发者:一个小学生</p></p>
+		</footer>
+	</div>
+</body>
+</html>
